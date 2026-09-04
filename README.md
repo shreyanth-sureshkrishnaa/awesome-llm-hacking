@@ -1,4 +1,4 @@
-# Awesome LLM Hacking [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa20e10fae62e357c476467d/media/badge.svg)](https://github.com/sindresorhus/awesome) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+# Awesome LLM Hacking
 
 > A curated, defense-aware list of offensive security techniques (Red Team), defensive mitigations (Blue Team), and dual-use benchmarks/tooling (Purple Team) for Large Language Models (LLMs) and Generative AI applications.
 
@@ -132,13 +132,3 @@ This repository serves as an educational and technical resource for security res
 ## Contributing
 
 Contributions are welcome! Please read the [Contributing Guidelines](CONTRIBUTING.md) and review the [Pull Request Template](.github/PULL_REQUEST_TEMPLATE.md) before submitting an entry.
-
-All submissions must follow standard Awesome List formatting, include dual-use/defensive context for offensive entries, and maintain alphabetical order within their section.
-
----
-
-## License
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-
-This repository is distributed under the terms of the MIT License. See [LICENSE](LICENSE) for details.
