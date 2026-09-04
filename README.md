@@ -32,27 +32,22 @@ This repository serves as an educational and technical resource for security res
 ### Direct & Indirect Prompt Injection
 
 - [BIPIA Benchmark](https://github.com/microsoft/BIPIA) - A benchmark dataset for evaluating model robustness against indirect prompt injection attacks in text processing tasks.
-- [Ignore This Title: Indirect Prompt Injection Attacks on LLMs](https://arxiv.org/abs/2302.12173) - Fundamental paper by Greshake et al. demonstrating how untrusted content in retrieval pipelines can subvert system instructions.
 - [Injected Prompt Security Benchmark (SecLists Prompt Injection)](https://github.com/danielmiessler/SecLists) - Collection of payload patterns and prompt injection sequences for automated vulnerability testing.
 - [Not What You’ve Signed Up For: Compromising Real-World LLM Applications via Indirect Prompt Injection](https://arxiv.org/abs/2302.12173) - Comprehensive security analysis on data exfiltration and control hijacking in interconnected LLM agents.
 - [Prompt Injection Attack Vectors (Perez & Ribeiro)](https://arxiv.org/abs/2208.05309) - Early foundational paper defining direct prompt injection, goal hijacking, and prompt leaking techniques.
 
 ### Jailbreaking & Alignment Breaking
 
-- [AdvGLUE](https://advglue.github.io/) - A multi-task adversarial benchmark assessing model stability under textual perturbations and adversarial prompts.
+- [AdvGLUE](https://adversarialglue.github.io/) - A multi-task adversarial benchmark assessing model stability under textual perturbations and adversarial prompts.
 - [AutoDAN: Generating Stealthy Jailbreak Prompts Automatically](https://arxiv.org/abs/2310.04451) - An automated gradient-based and genetic jailbreak generator producing fluent adversarial prompts.
-- [Do-Not-Answer Dataset](https://github.com/LibrAI/do-not-answer) - An open dataset of safety-critical prompts designed to evaluate safety alignment across sensitive categories.
-- [JailbreakEval](https://github.com/beaver-dam/jailbreak-eval) - A standardized framework for assessing the effectiveness and success rate of adversarial jailbreak attacks.
+- [Do-Not-Answer Dataset](https://github.com/libr-ai/do-not-answer) - An open dataset of safety-critical prompts designed to evaluate safety alignment across sensitive categories.
 - [Many-Shot Jailbreaking](https://www.anthropic.com/research/many-shot-jailbreaking) - Anthropic research detailing how long-context windows enable alignment overrides through repeated in-context examples.
-- [PAIR (Prompt Automatic Iterative Refinement)](https://arxiv.org/abs/2309.10253) - An algorithm using an attacker LLM to automatically engineer targeted jailbreaks against a defender LLM without gradient access.
 - [TAP (Tree of Attacks with Pruning)](https://arxiv.org/abs/2312.02119) - An automated black-box jailbreaking framework utilizing tree search and pruning to efficiently bypass safety filters.
 - [Universal and Transferable Adversarial Attacks on Aligned Language Models (GCG)](https://arxiv.org/abs/2307.15043) - Zou et al. introducing Greedy Coordinate Gradient suffix optimization to generate transferable jailbreak tokens.
 
 ### Model Inversion & Training Data Extraction
 
-- [AI Privacy Meter](https://github.com/privacytrustlab/privacy-meter) - Tool for quantitative evaluation of privacy risks and membership inference vulnerabilities in machine learning models.
 - [Extracting Training Data from Large Language Models](https://arxiv.org/abs/2012.07805) - Landmark paper by Carlini et al. demonstrating verbatim extraction of private training data from generative models.
-- [Membership Inference Attacks against Language Models](https://arxiv.org/abs/2205.10962) - Empirical study evaluating privacy leakage and membership detection in fine-tuned and pre-trained LLMs.
 - [Scalable Extraction of Training Data from Production LLMs](https://arxiv.org/abs/2311.17035) - Nasr et al. demonstrating practical data extraction techniques against commercial production alignment guardrails.
 - [The Secret Sharer: Evaluating and Testing Unintended Memorization in Neural Networks](https://arxiv.org/abs/1802.08232) - Methodology for measuring unintended memorization of sensitive tokens in language models.
 
