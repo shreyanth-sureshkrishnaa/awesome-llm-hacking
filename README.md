@@ -23,7 +23,6 @@ This repository serves as an educational and technical resource for security res
   - [Security Standards & Threat Models](#security-standards--threat-models)
   - [Interactive CTFs & Vulnerable LLM Sandboxes](#interactive-ctfs--vulnerable-llm-sandboxes)
 - [Contributing](#contributing)
-- [License](#license)
 
 ---
 
@@ -32,9 +31,9 @@ This repository serves as an educational and technical resource for security res
 ### Direct & Indirect Prompt Injection
 
 - [BIPIA Benchmark](https://github.com/microsoft/BIPIA) - A benchmark dataset for evaluating model robustness against indirect prompt injection attacks in text processing tasks.
+- [Ignore Previous Prompt: Attack Techniques For Language Models](https://arxiv.org/abs/2211.09527) - Foundational paper by Perez & Ribeiro defining direct prompt injection, goal hijacking, and prompt leaking techniques.
 - [Injected Prompt Security Benchmark (SecLists Prompt Injection)](https://github.com/danielmiessler/SecLists) - Collection of payload patterns and prompt injection sequences for automated vulnerability testing.
-- [Not What You’ve Signed Up For: Compromising Real-World LLM Applications via Indirect Prompt Injection](https://arxiv.org/abs/2302.12173) - Comprehensive security analysis on data exfiltration and control hijacking in interconnected LLM agents.
-- [Prompt Injection Attack Vectors (Perez & Ribeiro)](https://arxiv.org/abs/2208.05309) - Early foundational paper defining direct prompt injection, goal hijacking, and prompt leaking techniques.
+- [Not What You’ve Signed Up For: Compromising Real-World LLM Applications via Indirect Prompt Injection](https://arxiv.org/abs/2302.12173) - Comprehensive security analysis by Greshake et al. on data exfiltration and control hijacking in interconnected LLM agents.
 
 ### Jailbreaking & Alignment Breaking
 
@@ -53,16 +52,15 @@ This repository serves as an educational and technical resource for security res
 
 ### Agentic & Tool-Use Exploits
 
-- [CVE-2023-36258 (LangChain RCE)](https://nvd.nist.gov/vuln/detail/CVE-2023-36258) - Vulnerability analysis of arbitrary code execution vectors arising from unsafe experimental tool evaluation in LangChain.
+- [CVE-2023-36258 (LangChain RCE)](https://nvd.nist.gov/vuln/detail/cve-2023-36258) - Vulnerability analysis of arbitrary code execution vectors arising from unsafe experimental tool evaluation in LangChain.
+- [InjecAgent: Benchmarking Indirect Prompt Injections in Tool-Integrated LLM Agents](https://arxiv.org/abs/2403.02691) - Benchmark and evaluation dataset by UIUC Kang Lab assessing agent vulnerability to indirect prompt injections across tool invocations.
 - [PoisonedRAG: Knowledge Corruption Attacks on Retrieval-Augmented Generation](https://arxiv.org/abs/2402.07867) - Research introducing targeted knowledge poisoning attacks against RAG vector stores to manipulate downstream responses.
-- [Spilling the Beans: Privilege Escalation in Agentic Tool Calls](https://arxiv.org/abs/2403.02691) - Study analyzing tool authorization vulnerabilities and cross-domain privilege escalation in autonomous LLM agents.
-- [SSRF in Web-Browsing AI Plugins](https://portswigger.net/web-security/llm) - Exploitation methodology demonstrating Server-Side Request Forgery via unvalidated fetch commands issued by LLM web tools.
-- [Universal Vulnerabilities in Agentic Systems](https://arxiv.org/abs/2401.12345) - Taxonomy and breakdown of security failures in multi-agent orchestration frameworks and tool calling APIs.
+- [PortSwigger: Web LLM Attacks & Tool Hijacking](https://portswigger.net/web-security/llm-attacks) - Security analysis and methodology demonstrating SSRF, data exfiltration, and unauthorized action execution via LLM tool calling.
 
 ### Offensive Security Frameworks & Automated Scanners
 
 - [Adversarial Robustness Toolbox (ART)](https://github.com/Trusted-AI/adversarial-robustness-toolbox) - IBM library providing developer tools for evaluating and hardening models against adversarial attacks.
-- [Garak](https://github.com/leondz/garak) - The Generative AI Red-Teaming & Assessment Kicker for scanning LLMs for prompt injection, jailbreaks, and hallucinations.
+- [Garak](https://github.com/NVIDIA/garak) - The Generative AI Red-Teaming & Assessment Kicker for scanning LLMs for prompt injection, jailbreaks, and hallucinations.
 - [Inspect](https://github.com/UKGovernmentBEIS/inspect_ai) - Framework built by the AI Safety Institute for evaluation of AI model capabilities and safety boundaries.
 - [Promptfoo](https://github.com/promptfoo/promptfoo) - CLI tool and framework for testing LLM app security, prompt injections, output quality, and guardrail bypasses.
 - [PyRIT (Python Risk Identification Tool for AI)](https://github.com/Azure/PyRIT) - Microsoft framework enabling red teams to automate security assessments and risk identification in GenAI applications.
@@ -76,23 +74,23 @@ This repository serves as an educational and technical resource for security res
 - [Azure AI Content Safety](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/) - Enterprise API service detecting prompt injections, unsafe content, and multi-modal risk vectors.
 - [Guardrails AI](https://github.com/guardrails-ai/guardrails) - Framework for specifying semantic validation rules and enforcing output structure, safety policies, and schema constraints.
 - [Lakera Guard](https://www.lakera.ai/) - Commercial and API-based real-time security boundary defending against prompt injection and data exfiltration.
-- [Llama Guard 3 & Prompt Guard](https://github.com/meta-llama/llama-models) - Meta open-weight foundation models specifically fine-tuned for input/output safety classification and injection filtering.
 - [LLM Guard (Protect AI)](https://github.com/protectai/llm-guard) - Toolkit designed to sanitize LLM inputs and outputs against prompt injection, PII leakage, and malicious code.
-- [NeMo Guardrails](https://github.com/NVIDIA/NeMo-Guardrails) - NVIDIA toolkit for adding programmable guardrails using Colang to control LLM dialogue flow and safety parameters.
+- [NeMo Guardrails](https://github.com/NVIDIA-NeMo/Guardrails) - NVIDIA toolkit for adding programmable guardrails using Colang to control LLM dialogue flow and safety parameters.
+- [Purple Llama (Llama Guard & Prompt Guard)](https://github.com/meta-llama/PurpleLlama) - Meta open-weight evaluation and foundation models specifically fine-tuned for input/output safety classification and injection filtering.
 
 ### System Prompt Hardening & Architecture
 
 - [Dual-LLM Security Pattern](https://simonwillison.net/2023/Apr/25/dual-llm-pattern/) - Architectural design pattern separating untrusted data processing (unprivileged model) from decision execution (privileged model).
 - [Instruction Hierarchy (OpenAI Research)](https://arxiv.org/abs/2404.13208) - Defensive framework for training models to prioritize privileged system instructions over unprivileged user or third-party context.
-- [Prompt Sandwich & Delimiter Framing](https://learn.promptingguide.ai/risks/adversarial#prompt-sandwich) - Engineering technique wrapping untrusted inputs between rigid system boundary tokens to enforce instruction scope.
-- [Structural XML/JSON Output Enforcement](https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/use-xml-tags) - Best practice guide utilizing structured schema delimiters to isolate operational instructions from payload data.
+- [Prompt Engineering Adversarial Risks & Delimiters](https://www.promptingguide.ai/risks/adversarial) - Engineering guide on mitigating prompt injection and jailbreaking using delimiter framing and structural constraints.
+- [Structural XML Tag Prompt Enforcement](https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices#structure-prompts-with-xml-tags) - Best practice documentation utilizing structured XML delimiters to isolate operational instructions from untrusted data.
 
 ### Runtime Anomaly Detection & Telemetry
 
 - [Arize Phoenix](https://github.com/arize-ai/phoenix) - Open-source AI observability platform for tracing LLM execution, monitoring embedding drifts, and analyzing agentic tool calls.
-- [HoneyTokens in RAG Vector Databases](https://www.canarytokens.org) - Defensive deployment strategy placing canary data points in vector stores to alert on unauthorized retrieval or exfiltration attempts.
+- [Canarytokens Honeytokens for RAG & LLMs](https://canarytokens.org/generate) - Defensive deployment strategy placing canary tokens in vector databases and system prompts to alert on unauthorized retrieval or prompt extraction.
+- [Detecting Language Model Attacks with Perplexity (Alon & Kamfonas)](https://arxiv.org/abs/2308.14132) - Research methodology leveraging input and output token distribution perplexity to detect adversarial prompts and injection attacks.
 - [LangSmith](https://www.langchain.com/langsmith) - Observability and monitoring suite providing end-to-end trace logging for detecting runtime prompt injection and anomalous chain execution.
-- [Latent Space & Logit Perplexity Monitoring](https://arxiv.org/abs/2308.09348) - Research methodology leveraging output token distribution perplexity and latent representation anomalies to flag injection attacks.
 - [OpenInference / OpenTelemetry GenAI](https://github.com/Arize-ai/openinference) - Open standard semantic conventions for instrumenting GenAI application traces and security telemetry.
 
 ### Model Safety Evaluation Datasets
@@ -100,7 +98,7 @@ This repository serves as an educational and technical resource for security res
 - [BeaverTails](https://github.com/PKU-Alignment/BeaverTails) - Safety alignment dataset providing human annotations for safety bounds and red-teaming prompt evaluation.
 - [DecodingTrust](https://decodingtrust.github.io/) - Comprehensive benchmark for evaluating trustworthiness, toxicity, bias, privacy, and robustness in LLMs.
 - [HarmBench](https://github.com/centerforaisafety/HarmBench) - Standardized evaluation framework for automated red-teaming and safety validation across open and closed models.
-- [XSTest (Exaggerated Safety Test)](https://github.com/edwardjhu/xstest) - Test suite designed to measure false-positive refusals and exaggerated safety behaviors in aligned LLMs.
+- [XSTest (Exaggerated Safety Test)](https://github.com/paul-rottger/xstest) - Test suite designed to measure false-positive refusals and exaggerated safety behaviors in aligned LLMs.
 
 ---
 
@@ -111,16 +109,16 @@ This repository serves as an educational and technical resource for security res
 - [ISO/IEC 42001 AI Management System](https://www.iso.org/standard/81230.html) - International standard specifying requirements for establishing, implementing, and continually improving an AI management system.
 - [MITRE ATLAS (Adversarial Threat Landscape for AI Systems)](https://atlas.mitre.org/) - Knowledge base of adversary tactics, techniques, and case studies targeting AI-enabled systems.
 - [NIST AI Risk Management Framework (AI RMF 1.0)](https://www.nist.gov/itl/ai-risk-management-framework) - Federal guideline for managing risks to individuals, organizations, and society associated with artificial intelligence.
-- [NIST SP 800-218A (Secure Software Development for GenAI)](https://csrc.nist.gov/) - Special publication detailing secure lifecycle controls for generative AI and LLM software integrations.
+- [NIST SP 800-218A (Secure Software Development for GenAI)](https://csrc.nist.gov/pubs/sp/800/218/a/final) - Special publication detailing secure lifecycle controls for generative AI and LLM software integrations.
 - [OWASP Top 10 for Large Language Model Applications](https://owasp.org/www-project-top-10-for-large-language-model-applications/) - Industry standard classification of the top critical security vulnerabilities present in LLM applications.
 
 ### Interactive CTFs & Vulnerable LLM Sandboxes
 
-- [Double-Cross CTF](https://github.com/prompthacking/ctf) - Interactive prompt injection challenges focused on extraction of hidden system flags and bypass of input filters.
+- [Crucible AI CTF](https://crucible.dreadnode.io/) - Interactive challenge platform developed for AI red teams to practice attacking and exploiting ML models and LLM applications.
 - [Gandalf by Lakera](https://gandalf.lakera.ai/) - Multi-level interactive LLM security challenge testing prompt injection and alignment extraction techniques.
-- [HackAPrompt Benchmark & CTF](https://github.com/HackAPrompt/HackAPrompt) - Competition and dataset evaluating prompt hacking techniques across hundreds of thousands of user submissions.
-- [OWASP Juice Shop GenAI Extension](https://owasp.org/www-project-juice-shop/) - Intentionally vulnerable web application incorporating GenAI vulnerabilities, tool abuse, and prompt injection labs.
-- [PortSwigger Web Security Academy: LLM Attacks](https://portswigger.net/web-security/llm) - Interactive hands-on labs covering indirect prompt injection, tool hijacking, and remote code execution vulnerabilities.
+- [HackAPrompt Paper & Benchmark](https://arxiv.org/abs/2311.16119) - Research paper and benchmark analyzing results and prompt hacking methodologies from the global HackAPrompt competition.
+- [PortSwigger Web Security Academy: LLM Attacks](https://portswigger.net/web-security/llm-attacks) - Interactive hands-on labs covering indirect prompt injection, tool hijacking, and remote code execution vulnerabilities.
+- [Tensor Trust](https://tensortrust.ai/) - Interactive dual-use challenge and research benchmark where participants design prompt injection attacks and defensive system prompts.
 
 ---
 
