@@ -60,6 +60,7 @@ This repository serves as an educational and technical resource for security res
 ### Offensive Security Frameworks & Automated Scanners
 
 - [Adversarial Robustness Toolbox (ART)](https://github.com/Trusted-AI/adversarial-robustness-toolbox) - IBM library providing developer tools for evaluating and hardening models against adversarial attacks.
+- [Dark-Moon](https://github.com/ASCIT31/Dark-Moon) - Open-source (GPLv3) autonomous AI penetration-testing CLI/SDK whose dedicated LLM-security agent scans applications for the OWASP LLM Top 10 (prompt injection, system-prompt leak, tool abuse, SSRF, secret exposure) on a local or cloud model.
 - [Garak](https://github.com/NVIDIA/garak) - The Generative AI Red-Teaming & Assessment Kicker for scanning LLMs for prompt injection, jailbreaks, and hallucinations.
 - [Inspect](https://github.com/UKGovernmentBEIS/inspect_ai) - Framework built by the AI Safety Institute for evaluation of AI model capabilities and safety boundaries.
 - [Promptfoo](https://github.com/promptfoo/promptfoo) - CLI tool and framework for testing LLM app security, prompt injections, output quality, and guardrail bypasses.
